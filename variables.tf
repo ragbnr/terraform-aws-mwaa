@@ -151,7 +151,7 @@ variable "max_webservers" {
   type        = number
   default     = 2
   validation {
-    condition     = (var.max_webservers >= 2 && var.min_webservers <= 5)
+    condition     = (var.max_webservers >= 2 && var.max_webservers <= 5)
     error_message = "Error: Value need to be between 2 and 5."
   }
 }
